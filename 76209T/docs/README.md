@@ -5,4 +5,5 @@ Students like to dissassemble working prototypes. This one is intended to inspir
 And this folder should hold some documentation pictures.
 
 ![plot_rpm](plot_rpm.png)
+![plot_rpm2](plot_rpm2.png)
 

@@ -29,11 +29,8 @@ flywheel_motor_a = Motor(Ports.PORT9, GearSetting.RATIO_6_1, False)
 flywheel_motor_b = Motor(Ports.PORT10, GearSetting.RATIO_6_1, True)
 flywheel = MotorGroup(flywheel_motor_a, flywheel_motor_b)
 
-
 # wait for rotation sensor to fully initialize
 wait(30, MSEC)
-
-
 
 # define variables used for controlling motors based on controller inputs
 controller_1_right_shoulder_control_motors_stopped = True
@@ -106,6 +103,5 @@ def main():
     pass
 
 main()
-
-
 ```
+![flywheel_rpm](docs/plot_rpm2.png)
