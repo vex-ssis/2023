@@ -37,7 +37,7 @@ int main() {
     }
     Motor1.setVelocity(fb, percent);
     Controller1.Screen.setCursor(0,0);
-    Controller1.Screen.print("Input value:");
+    Controller1.Screen.print("Input value: ");
     Controller1.Screen.print(fb);
     Controller1.Screen.print("  ");
     Controller1.Screen.newLine();
