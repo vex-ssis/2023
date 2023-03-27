@@ -8,6 +8,10 @@ We added a file [projectile_motion.ipynb](docs/projectile_motion.ipynb) to this 
 
 ## Virtual Skills
 
-Physical will be updated soon. And the virtual competition is in full swing too:
+In November 25, 2022 the current local record for programming is:
 
 ![76209M Masters](76209M/2022-09-21_72a.png)
+
+Not long after team [76209M](https://www.robotevents.com/teams/VRC/76209M) significantly improved their score:
+
+![world standing](docs/2023-03-27.png)
