@@ -2,7 +2,7 @@
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
 /*    Author:       mk                                                        */
-/*    Created:      Wed Sep 26 2019                                           */
+/*    Created:      Wed May 10 2020                                           */
 /*    Description:  Competition for 76209T                                    */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
@@ -40,6 +40,11 @@ void pre_auton(void) {
 
   // All activities that occur before the competition starts
   // Example: clearing encoders, setting servo positions, ...
+  Brain.Screen.print("Initializing.");
+  Controller1.Screen.print("Initializing.");
+  Drivetrain.setDriveVelocity(80,percent);
+  Drivetrain.setTurnVelocity(80,percent);
+  Roller.setVelocity(100,percent);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -56,6 +61,18 @@ void autonomous(void) {
   // ..........................................................................
   // Insert autonomous user code here.
   // ..........................................................................
+  Brain.Screen.clearScreen();
+  Brain.Screen.setCursor(1,1);
+  Brain.Screen.print("Autonomous.");
+  Controller1.Screen.clearScreen();
+  Controller1.Screen.setCursor(1,1);
+  Controller1.Screen.print("Autonomous");
+  Drivetrain.driveFor(reverse, 30,mm);
+  Roller.spinFor(reverse,210,degrees);
+  Drivetrain.driveFor(forward, 450,mm);
+  Drivetrain.turnFor(right,40,degrees);
+  Drivetrain.driveFor(reverse, 600,mm);
+  Roller.spinFor(reverse,210,degrees);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -70,10 +87,16 @@ void autonomous(void) {
 
 void usercontrol(void) {
   // User control code here, inside the loop
+  Brain.Screen.print("User Control");
+  Controller1.Screen.clearScreen();
+  Controller1.Screen.print("User control");
+  Roller.setVelocity(100,percent);
   while (1) {
     // This is the main execution loop for the user control program.
     // Each time through the loop your program should update motor + servo
     // values based on feedback from the joysticks.
+    Controller1.Screen.setCursor(1, 1);
+    Controller1.Screen.print(Controller1.Axis1.position(percent));
 
     // ........................................................................
     // Insert user code here. This is where you use the joystick values to
