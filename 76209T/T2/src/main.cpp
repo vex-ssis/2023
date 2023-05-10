@@ -3,11 +3,16 @@
 /*    Module:       main.cpp                                                  */
 /*    Author:       mk                                                        */
 /*    Created:      Wed Sep 26 2019                                           */
-/*    Description:  Competition for 76209                                     */
+/*    Description:  Competition for 76209T                                    */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 
 // ---- START VEXCODE CONFIGURED DEVICES ----
+// Robot Configuration:
+// [Name]               [Type]        [Port(s)]
+// Controller1          controller                    
+// Drivetrain           drivetrain    1, 10           
+// Roller               motor         8               
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
