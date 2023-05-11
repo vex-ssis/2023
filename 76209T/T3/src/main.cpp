@@ -68,11 +68,24 @@ void autonomous(void) {
   Controller1.Screen.setCursor(1,1);
   Controller1.Screen.print("Autonomous");
   Drivetrain.driveFor(reverse, 30,mm);
-  Roller.spinFor(reverse,210,degrees);
+  Roller.spinFor(reverse,200,degrees);
   Drivetrain.driveFor(forward, 450,mm);
-  Drivetrain.turnFor(right,40,degrees);
+  Drivetrain.turnFor(right,90,degrees);
+  Drivetrain.driveFor(reverse, 630,mm);
+  Drivetrain.driveFor(reverse, 30,mm);
+  Roller.spinFor(reverse,210,degrees);
+  Drivetrain.driveFor(forward, 600,mm);
+  Drivetrain.turnFor(left,45,degrees);
+  Drivetrain.driveFor(forward, 2800,mm);
+  Drivetrain.turnFor(right,135,degrees);
+  Drivetrain.driveFor(reverse, 700,mm);
+  Roller.spinFor(reverse,210,degrees);
+  Drivetrain.driveFor(forward, 550,mm);
+  Drivetrain.turnFor(right,90,degrees);
   Drivetrain.driveFor(reverse, 600,mm);
   Roller.spinFor(reverse,210,degrees);
+  Drivetrain.turnFor(right,30,degrees);
+  Drivetrain.driveFor(forward, 300,mm);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -89,6 +102,7 @@ void usercontrol(void) {
   // User control code here, inside the loop
   Brain.Screen.print("User Control");
   Controller1.Screen.clearScreen();
+  Controller1.Screen.setCursor(1,1);
   Controller1.Screen.print("User control");
   Roller.setVelocity(100,percent);
   while (1) {
