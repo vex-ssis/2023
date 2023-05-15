@@ -79,14 +79,14 @@ void autonomous(void) {
   Roller.spinFor(reverse,210,degrees);
   Drivetrain.driveFor(forward, 600,mm);
   // tweak here
-  Drivetrain.turnFor(left,47,degrees);
-  Drivetrain.driveFor(forward, 2800,mm);
+  Drivetrain.turnFor(left,46,degrees);
+  Drivetrain.driveFor(forward, 2600,mm);
   Drivetrain.turnFor(right,135,degrees);
-  Drivetrain.driveFor(reverse, 700,mm);
+  Drivetrain.driveFor(reverse, 900,mm);
   Roller.spinFor(reverse,210,degrees);
-  Drivetrain.driveFor(forward, 550,mm);
+  Drivetrain.driveFor(forward, 400,mm);
   Drivetrain.turnFor(right,90,degrees);
-  Drivetrain.driveFor(reverse, 600,mm);
+  Drivetrain.driveFor(reverse, 650,mm);
   Roller.spinFor(reverse,210,degrees);
   Drivetrain.turnFor(right,30,degrees);
   Drivetrain.driveFor(forward, 300,mm);
