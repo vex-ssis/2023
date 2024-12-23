@@ -1,5 +1,8 @@
 # 2023
 
+[![pages-build-deployment](https://github.com/vex-ssis/2023/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vex-ssis/2023/actions/workflows/pages/pages-build-deployment)
+[![MIT license](https://img.shields.io/github/license/vex-ssis/2023)](https://vex-ssis.mit-license.org/)
+
 SSIS Robotics in the "Spin Up" VEX competition 2022-2023
 
 ## Projectile Motion
